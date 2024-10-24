@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertaMente</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="con1">
+
+        <a href="hackaton_1.html" class="return2">
+        <img src="fotos/return.png" width="40px" height="40px" class="return">
+        </a>
+        
+
+        <div>
+            <h1 id="txt6">23</h1>
+            <h2 id="txt7">Oct</h2>
+        </div>
+
+        <div class="con8">
+            <textarea id="miTextarea" rows="40" cols="50"></textarea>
+            <button id="save" onclick="guardarTexto()">Guardar</button>
+
+            <script>
+                function guardarTexto() {
+                let texto = document.getElementById('miTextarea').value;
+                localStorage.setItem('miTexto', texto);
+                alert('Texto guardado');}
+            </script>
+        </div>
+    </div>
+</body>
+</html>

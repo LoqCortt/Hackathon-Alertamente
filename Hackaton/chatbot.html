@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertaMente</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="con1">
+
+        <a href="hackaton_1.html">
+        <div class="con10">
+        <img src="fotos/return.png" width="40px" height="40px" class="return">
+        </div>
+        </a>
+        
+        <div class="con11">
+            <h1 id="txt8">Chatbot</h1>
+        </div>
+
+        <div class="con12">
+          <main class="contenido">
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box"></div>
+                <input type="text" id="user-input" placeholder="Habla">
+                <button id="send-button">Enviar</button>
+            </div>
+        </main>
+      </div>
+            <div class="con13"></div>
+        </div>
+
+        <script>
+          const sendButton = document.getElementById('send-button');
+          const userInput = document.getElementById('user-input');
+          const chatBox = document.getElementById('chat-box');
+  
+          sendButton.addEventListener('click', () => {
+              const userText = userInput.value;
+              if (userText.trim() !== '') {
+                  addMessage('Tú: ' + userText);
+                  userInput.value = '';
+                  setTimeout(() => {
+                      const aiResponse = 'AI: Hola, como estas';
+                      addMessage(aiResponse);
+                  }, 1000);
+              }
+          });
+  
+          function addMessage(message) {
+              const messageElement = document.createElement('div');
+              messageElement.textContent = message;
+              chatBox.appendChild(messageElement);
+              chatBox.scrollTop = chatBox.scrollHeight;
+          }
+      </script>
+</body>
+</html>

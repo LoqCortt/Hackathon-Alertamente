@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertaMente</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="con1">
+
+        <a href="hackaton_1.html">
+        <div class="con10">
+        <img src="fotos/return.png" width="40px" height="40px" class="return">
+        </div>
+        </a>
+        
+        <div class="con11">
+            <h1 id="txt8">¿Como te sientes <br> hoy?</h1>
+        </div>
+
+        <div class="con12">
+            <div class="con13">
+
+                <form id="form1">
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+                </form>
+
+                <form id="form2">
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+                </form>
+
+                <form id="form3">
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+                </form>
+
+                <form id="form4">
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+                </form>
+
+                <form id="form5">
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                      <input type="radio" name="option" class="custom-radio" />
+                      <span class="radio-image"></span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+
+                      <label>
+                        <input type="radio" name="option" class="custom-radio" />
+                        <span class="radio-image"></span>
+                      </label>
+                </form>
+            </div>
+            <div class="con14">
+            <img id="img4" src="fotos/sonrisa.png" width="50px" height="50px">
+            <img id="img5" src="fotos/sad-face.png" width="50px" height="50px">
+            <img id="img6" src="fotos/angry.png" width="50px" height="50px">
+            <img id="img7" src="fotos/sick.png" width="50px" height="50px">
+            <img id="img8" src="fotos/sleepy.png" width="50px" height="50px">
+            </div>
+
+            <div class="con15">
+                <textarea id="miTextarea" rows="15" cols="50"></textarea>
+                <button id="save" onclick="guardarTexto()">Guardar</button>
+    
+                <script>
+                    function guardarTexto() {
+                    let texto = document.getElementById('miTextarea').value;
+                    localStorage.setItem('miTexto', texto);
+                    alert('Texto guardado');}
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
